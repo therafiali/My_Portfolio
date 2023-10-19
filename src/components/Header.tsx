@@ -21,7 +21,7 @@ const Header = async (props: Props) => {
        <div className='flex flex-col items-center justify-center space-y-4 '>
         <Motion delay={1} direction='down'>
         <div className='bg-white rounded-full h-40 w-40 flex items-center justify-center shadow-md shadow-gray-400 hover:scale-105 duration-500'>
-            <Image src={profileData.image} alt="img" className="" height={150} width={150}/>
+            <Image src={profileData.image} alt="img" className="rounded-full" height={150} width={150}/>
           </div>
         </Motion>
           
