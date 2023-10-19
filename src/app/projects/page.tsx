@@ -1,10 +1,13 @@
-import Footer from '@/components/Footer'
+
 import Motion from '@/components/Motion'
 import Navbar from '@/components/Navbar'
 import Project from '@/components/Project'
-import { getProjects, getSocials } from '@/utils/sanity-utis'
+import Footer from '@/components/footer'
+import { getProjects, getSocials } from '@/utils/sanity-utils'
+import { ProjectType } from '@/utils/types/Project'
+
 import React from 'react'
-import { ProjectType } from '../types/Project'
+
 
 type Props = {}
 

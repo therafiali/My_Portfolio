@@ -1,8 +1,9 @@
-import { ProjectType } from '@/app/types/Project'
-import { Skill } from '@/app/types/Skill'
-import Footer from '@/components/Footer'
+
+import Footer from '@/components/footer'
 import Navbar from '@/components/Navbar'
-import { getProject, getSocials } from '@/utils/sanity-utis'
+import { getProject, getSocials } from '@/utils/sanity-utils'
+import { ProjectType } from '@/utils/types/Project'
+import { Skill } from '@/utils/types/Skill'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'

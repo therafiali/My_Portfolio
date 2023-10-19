@@ -1,10 +1,12 @@
-import Footer from '@/components/Footer'
+import Footer from '@/components/footer'
 import Motion from '@/components/Motion'
 import Navbar from '@/components/Navbar'
 import Post from '@/components/Post'
-import { getBlogPosts, getSocials } from '@/utils/sanity-utis'
+import { getBlogPosts, getSocials } from '@/utils/sanity-utils'
+import { BlogPost } from '@/utils/types/BlogPost'
+
 import React from 'react'
-import { BlogPost } from '../types/BlogPost'
+
 
 type Props = {}
 
