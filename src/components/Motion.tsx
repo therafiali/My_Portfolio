@@ -23,7 +23,7 @@ const Motion = ({children,delay,direction}: Props) => {
 
 
   return (
-    <div ref={ref} className='flex items-center justify-center'>
+    <div ref={ref} className='hidden md:flex items-center justify-center'>
         <motion.div 
         variants={{
             hidden:{

@@ -25,6 +25,11 @@ const ProjectsPage = async (props: Props) => {
            ))}
             </div>
         </Motion>
+        <div className='md:hidden w-full p-5 my-4 md:my-16 grid grid-cols-1 md:grid-cols-3 gap-12'>
+            {projectData.map((p:ProjectType,index:number)=>(
+            <Project key={index} props={p}/>
+           ))}
+            </div>
         </div>
         <Footer props={socialData}/>
     </section>

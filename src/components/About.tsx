@@ -16,15 +16,18 @@ const About = async () => {
   
 
   return (
-    <section className='max-w-7xl h-screen mx-auto p-5 flex flex-col items-center justify-center space-y-24 '>
-       <h1 className='text-2xl uppercase tracking-[20px] text-violet-500'>about</h1>
-       <div className='flex flex-col-reverse md:flex-row items-center md:justify-between w-full '>
+    <section className=' max-w-7xl h-screen mx-auto p-5 flex flex-col items-center justify-center space-y-24 relative mt-20 md:mt-0'>
+       <h1 className=' absolute top-0 text-2xl uppercase tracking-wider md:tracking-[20px] text-violet-500'>about</h1>
+       <div className='flex flex-col-reverse md:flex-row items-center md:justify-between w-full  '>
             <div className='md:w-[70%] w-full'>
             <Motion delay={1} direction={'left'}>
                 <div className='p-4 text-center md:text-left font-semibold text-sm'>
                     <PortableText value={aboutData.bio}/>
                 </div>
             </Motion>
+            <div className='md:hidden  md:mt-0 p-4 text-center md:text-left font-semibold text-sm'>
+                    <PortableText value={aboutData.bio}/>
+                </div>
             </div>
             
 
@@ -36,6 +39,11 @@ const About = async () => {
                     </div>
                 </div>
             </Motion>
+            <div className='md:hidden flex items-center justify-center shadow-lg shadow-gray-400 rounded-lg bg-white h-[250px] p-2 w-full my-12'>
+                    <div className='w-full h-full bg-violet-500 rounded-lg hover:scale-105 duration-300'>
+                    <Image src={aboutData.secondImage} alt="img" className="rounded-lg w-full h-full object-cover" height={150} width={150} />
+                    </div>
+                </div>
             </div>
        </div>
     </section>

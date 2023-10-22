@@ -26,6 +26,11 @@ const PostsPage = async(props: Props) => {
             ))}
             </div>
       </Motion>
+      <div className='md:hidden w-full p-5 my-4 md:my-16 grid grid-cols-1 md:grid-cols-2 gap-12'>
+            {blogData.map((b:BlogPost,index:number)=>(
+              <Post key={index} props={b}/>
+            ))}
+            </div>
         </div>
       <Footer props={socialData}/>
     </section>

@@ -16,6 +16,9 @@ const Blog = ({props}: Props) => {
         {props.title}
         </p>
         </Motion>
+        <p className='md:hidden block text-violet-800 cursor-pointer hover:text-pink-600 '>
+        {props.title}
+        </p>
         <Motion delay={1} direction={'right'}>
         <p className='text-sm text-violet-500 hidden md:block'>{props.publishedAt.toString().slice(0,10)}</p>
         </Motion>

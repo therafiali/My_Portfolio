@@ -9,9 +9,9 @@ type Props = {
 
 const SkillCircle = ({props}: Props) => {
   return (
-    <div className='h-24 w-24 flex justify-center items-center p-1 rounded-full shadow-lg shadow-gray-400 bg-violet-500 hover:bg-pink-500 duration-300 hover:scale-110'>
+    <div className='h-12 w-12 md:h-24 md:w-24 flex justify-center items-center p-1 rounded-full shadow-lg shadow-gray-400 bg-violet-500 hover:bg-pink-500 duration-300 hover:scale-110'>
        <div className='flex justify-center items-center bg-[#F1F6F9] rounded-full h-full w-full'>
-            <Image src={props.image} alt="skill" className="" height={50} width={50}/>
+            <Image src={props.image} alt="skill" className="rounded-full" height={50} width={50}/>
        </div>
     </div>
   )

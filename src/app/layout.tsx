@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import favicon from "@/app/favicon.ico"
+import Wrapper from "@/components/Shared/Wrapper";
 
 export const metadata: Metadata = {
   title: "Porfolio App - Rafi Ali",
@@ -13,7 +15,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Wrapper>
+        {children}
+        </Wrapper>
+        </body>
     </html>
   );
 }

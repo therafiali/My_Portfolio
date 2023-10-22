@@ -18,11 +18,11 @@ export default async function Home() {
 
 
   return (
-   <div className="h-screen w-full overflow-x-hidden bg-[#F1F6F9]">
+   <div className="">
     {/* navbar */}
     <Navbar props={socialData}/>
     {/* header */}
-    <Header/>
+    <Header props={socialData} />
     <Divider/>
     {/* about */}
     <About/>
