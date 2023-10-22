@@ -14,6 +14,7 @@ const About = async () => {
 
   const aboutData:Props=await getAbout()
   
+  
 
   return (
     <section className=' max-w-7xl md:h-screen mx-auto p-5 flex flex-col items-center justify-center md:space-y-24 relative mt-8 md:mt-0'>
@@ -22,7 +23,10 @@ const About = async () => {
             <div className='md:w-[70%] w-full'>
             <Motion delay={1} direction={'left'}>
                 <div className='p-4 text-center md:text-left font-semibold text-sm'>
-                    <PortableText value={aboutData.bio}/>
+                    {/* <PortableText value={aboutData.bio}/> */}
+                    <p>
+                    I am a highly motivated <span className='bg-yellow-200 px-2'> Jamstack Developer & Modern Web App developer</span> with a strong foundation in programming and a sharp focus on design. My passion lies in delivering innovative solutions that push the boundaries of technology.
+                    </p>
                 </div>
             </Motion>
             <div className='md:hidden  md:mt-0 p-4 text-center md:text-left font-semibold text-sm'>
