@@ -23,7 +23,7 @@ const Skills = async (props: Props) => {
       </Motion>
       <div className=" mx-auto w-3/4  md:hidden grid grid-cols-3 sm:grid-cols-6 md:grid-cols-6 gap-4 md:gap-8">
         {skillData.map((s: Skill, index: number) => (
-          <div className=" flex items-center justify-center">
+          <div key={index}  className=" flex items-center justify-center">
             <SkillCircle key={index} props={s} />
           </div>
         ))}
