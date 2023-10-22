@@ -10,7 +10,7 @@ import { Social } from '@/utils/types/Social'
 
 type Props = {}
 
-const Header = async (props: Props) => {
+const  Header = async (props: Props) => {
   
   const profileData:Profile=await getProfile()
  
