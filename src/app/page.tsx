@@ -32,7 +32,10 @@ export default async function Home() {
     <Divider/>
     {/* projects */}
     <Projects/>
+    <div className="md:mt-60">
+
     <Divider/>
+    </div>
     {/* blogs */}
     <Blogs/>
     <Divider/>

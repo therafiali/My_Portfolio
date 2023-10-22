@@ -16,7 +16,7 @@ const About = async () => {
   
 
   return (
-    <section className=' max-w-7xl h-screen mx-auto p-5 flex flex-col items-center justify-center space-y-24 relative mt-20 md:mt-0'>
+    <section className=' max-w-7xl md:h-screen mx-auto p-5 flex flex-col items-center justify-center md:space-y-24 relative mt-8 md:mt-0'>
        <h1 className=' absolute top-0 text-2xl uppercase tracking-wider md:tracking-[20px] text-violet-500'>about</h1>
        <div className='flex flex-col-reverse md:flex-row items-center md:justify-between w-full  '>
             <div className='md:w-[70%] w-full'>

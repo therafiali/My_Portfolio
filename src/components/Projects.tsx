@@ -11,8 +11,8 @@ const Projects = async (props: Props) => {
   const projectData: ProjectType[] = await getProjects();
 
   return (
-    <section className="relative h-screen max-w-7xl mx-auto flex flex-col justify-center items-center space-y-24   md:mt-0">
-      <h1 className="absolute  top-14 text-2xl uppercase tracking-wider md:tracking-[20px] text-violet-500">
+    <section className="relative  h-80 max-w-7xl mx-auto flex flex-col justify-center items-center md:space-y-20  space-y-10 md:mt-0">
+      <h1 className="mt-80 text-2xl uppercase tracking-wider md:tracking-[20px] text-violet-500 ">
         projects
       </h1>
       <Motion delay={1} direction={""}>
@@ -22,7 +22,7 @@ const Projects = async (props: Props) => {
           ))}
         </div>
       </Motion>
-      <div className="block md:hidden absolute top-4 ">
+      <div className="block md:hidden mt-0 ">
         <div className="grid md:hidden grid-cols-1 md:grid-cols-3 gap-8 px-4">
           {projectData.slice(2, 6).map((p: ProjectType, index: number) => (
             <Project key={index} props={p} />
@@ -31,7 +31,7 @@ const Projects = async (props: Props) => {
         <div className="mt-10 text-center">
           <button
             type="submit"
-            className=" bg-gradient-to-r from-violet-500 to-pink-500 p-3 rounded-full font-bold w-32 text-white hover:opacity-90"
+            className=" bg-gradient-to-r from-violet-500 to-pink-500 p-3 rounded-full font-bold w-32 text-white hover:opacity-90 "
           >
             <Link href="/projects">See more...</Link>
           </button>

@@ -19,7 +19,7 @@ const  Header = async ({props}: Props) => {
 
 
   return (
-    <section className='relative z-0 h-[calc(100vh-56px)] w-full flex justify-center items-center mt-8 md:mt-0 '>
+    <section className='relative z-0 md:h-[calc(100vh-56px)] w-full flex justify-center items-center mt- md:mt-0 '>
        <div className='flex flex-col items-center justify-center space-y-4 '>
         <Motion delay={1} direction='down'>
         <div className='bg-white rounded-full h-40 w-40 flex items-center justify-center shadow-md  hover:scale-105 duration-500  border bg-gradient-to-r from-fuchsia-500 to-indigo-600 mt-12 md:mt-0'>

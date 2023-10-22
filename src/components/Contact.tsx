@@ -22,7 +22,7 @@ const Contact = (props: Props) => {
   }
 
   return (
-    <section className='h-screen p-5 max-w-7xl mx-auto flex flex-col justify-center items-center space-y-24 w-full'>
+    <section className='md:h-screen p-5 max-w-7xl mx-auto flex flex-col justify-center items-center md:space-y-24 space-y-16 w-full '>
         <h1 className='text-2xl uppercase tracking-[20px] text-violet-500'>contact me</h1>
         <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col justify-center items-center space-y-3 w-full md:w-[30%] '>
             <input {...register("name", { required: true })} className='placeholder-violet-400 border border-violet-500 focus:outline-none p-2 bg-transparent rounded-lg w-full' placeholder='Your name' type='text'/>

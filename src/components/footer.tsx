@@ -10,7 +10,7 @@ type Props = {
 
 const Footer = ({props}: Props) => {
   return (
-    <footer className='bg-violet-900 w-full py-5 mt-12 md:mt-0'>
+    <footer className='bg-violet-900 w-full py-5 mt-4 md:mt-0'>
        <div className='max-w-7xl mx-auto flex justify-between items-center p-5'>
        <Motion delay={1} direction={'left'}>
        <div className='flex items-center space-x-6'>

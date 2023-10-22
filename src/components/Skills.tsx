@@ -10,7 +10,7 @@ const Skills = async (props: Props) => {
   const skillData: Skill[] = await getSkills();
 
   return (
-    <section className="relative h-screen p-5 max-w-7xl mx-auto flex flex-col justify-center items-center space-y-24  mt-20 md:mt-0">
+    <section className="relative md:h-screen p-5 max-w-7xl mx-auto flex flex-col justify-center items-center md:space-y-24   md:mt-0">
       <h1 className="absolute top-14 text-2xl uppercase tracking-wider md:tracking-[20px] text-violet-500">
         skills
       </h1>
@@ -21,7 +21,7 @@ const Skills = async (props: Props) => {
           ))}
         </div>
       </Motion>
-      <div className=" mx-auto w-3/4  md:hidden grid grid-cols-3 sm:grid-cols-6 md:grid-cols-6 gap-4 md:gap-8">
+      <div className=" mx-auto w-3/4 mt-20 md:hidden grid grid-cols-3 sm:grid-cols-6 md:grid-cols-6 gap-4 md:gap-8">
         {skillData.map((s: Skill, index: number) => (
           <div key={index}  className=" flex items-center justify-center">
             <SkillCircle key={index} props={s} />
