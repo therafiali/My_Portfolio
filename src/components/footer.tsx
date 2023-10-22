@@ -21,7 +21,7 @@ const Footer = ({props}: Props) => {
        </Motion>
        
        <Motion delay={1} direction={'right'}>
-        <p className='text-[#F1F6F9] text-xs md:text-sm'>Made with ❤️ by FullStackSnehasish</p>
+        <p className='text-[#F1F6F9] text-xs md:text-sm'>Made with Muhammad Rafi Ali</p>
         </Motion>
        </div>
     </footer>
