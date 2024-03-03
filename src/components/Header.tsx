@@ -22,12 +22,12 @@ const  Header = async ({props}: Props) => {
     <section className='relative z-0 md:h-[calc(100vh-56px)] w-full flex justify-center items-center mt- md:mt-0 '>
        <div className='flex flex-col items-center justify-center space-y-4 '>
         <Motion delay={1} direction='down'>
-        <div className='bg-white rounded-full h-40 w-40 flex items-center justify-center shadow-md  hover:scale-105 duration-500  border bg-gradient-to-r from-fuchsia-500 to-indigo-600 mt-12 md:mt-0'>
+        <div className='bg-white rounded-full h-40 w-40 flex items-center justify-center shadow-md  hover:scale-105 duration-500  border bg-gradient-to-r from-emerald-300 to-cyan-600 mt-12 md:mt-0'>
             <Image src={profileData.image} alt="img" className="rounded-full " height={150} width={150}/>
           </div>
         </Motion>
 
-        <div className='md:hidden bg-white rounded-full h-40 w-40 flex items-center justify-center shadow-md  hover:scale-105 duration-500  border bg-gradient-to-r from-fuchsia-500 to-indigo-600 md:mt-0'>
+        <div className='md:hidden bg-white rounded-full h-40 w-40 flex items-center justify-center shadow-md  hover:scale-105 duration-500  border bg-gradient-to-r from-emerald-300 to-cyan-600 md:mt-0'>
             <Image src={profileData.image} alt="img" className="rounded-full " height={150} width={150}/>
           </div>
           
@@ -66,7 +66,7 @@ const  Header = async ({props}: Props) => {
     </div>
           
        </div>
-       <div className='h-[30%] -z-10 absolute w-[50%] md:w-[20%] opacity-50 fliter blur-3xl bg-gradient-to-r from-fuchsia-500 to-indigo-600'/>
+       <div className='h-[30%] -z-10 absolute w-[50%] md:w-[20%] opacity-50 fliter blur-3xl bg-gradient-to-r from-emerald-300 to-cyan-600'/>
     </section>
   )
 }
